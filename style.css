@@ -83,7 +83,7 @@ TABLE OF CONTENT
 
   /* FONT SIZE */
 
-  --ui-typography-h1: 4 rem;
+  --ui-typography-h1: 7rem;
   --ui-typography-h2: 1.5625rem;
   --ui-typography-h3: 1.25rem;
   --ui-typography-h4: 1rem;
@@ -159,10 +159,10 @@ body {
 
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid var(--ui-color-pop); /* The typwriter cursor */
+  border-right: .08em solid var(--ui-color-pop); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin-bottom : 1.5rem;
-  margin-right: 2.3rem;
+  margin-right: 2rem;
   letter-spacing: .3rem; 
   animation: 
     typing 1.6s steps(14, end),
@@ -182,7 +182,7 @@ body {
 }
 
 .short-bio{
-  padding-top : 1.5rem;
+  padding-top : 1rem;
   padding-bottom: 1rem;
 }
 
@@ -768,7 +768,7 @@ div label[for=ui-component-toggle__yearly] {
 
     /* FONT SIZE */
 
-    --ui-typography-h1: 2.1875rem;
+    --ui-typography-h1: 2.25rem;
     --ui-typography-h2: 1.75rem;
     --ui-typography-h4: 1.125rem;
     --ui-typography-p : 1.125rem;
