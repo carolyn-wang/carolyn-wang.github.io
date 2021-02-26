@@ -19,7 +19,7 @@ TABLE OF CONTENT
 |  7.1 HEADER
 |  7.2 HERO
 |  7.3 CUSTOMER
-|  7.4 FEATURE
+|  7.4 PROJECTS
 |  7.5 TESTIMONIAL
 |  7.6 PRICING
 |  7.7 FAQ
@@ -109,6 +109,7 @@ TABLE OF CONTENT
   
   --ui-layout-container: 1.25rem;
   --ui-layout-grid     : 3.625rem;
+  --ui-layout-margin     : 4rem;
   --ui-layout-gutter   :1rem;
 
   /* GAP */
@@ -575,25 +576,25 @@ div label[for=ui-component-toggle__yearly] {
 
 /*--------------------------------------------------------------
 |
-| 7.4 FEATURE
+| 7.4 PROJECTS
 |
 --------------------------------------------------------------*/
 
-.ui-section-feature {
-  padding-bottom: 5rem;
+.ui-section-projects {
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.ui-section-feature__layout { row-gap: var(--ui-gap-card); }
+.ui-section-projects__layout { row-gap: var(--ui-gap-card); }
 
 /* CARD */
 
-.ui-component-card--feature { text-align: center; }
+.ui-component-card--projects { text-align: center; }
 
 
-.ui-component-card--feature-content { padding: 2.25rem 1.5rem; }
+.ui-component-card--projects-content { padding: 2.25rem 1.5rem; }
 
-.ui-component-card--feature-title { margin-bottom: .5rem; }
+.ui-component-card--projects-title { margin-bottom: .5rem; }
 
 /*--------------------------------------------------------------
 |
@@ -771,7 +772,7 @@ div label[for=ui-component-toggle__yearly] {
     --ui-typography-h1: 2.25rem;
     --ui-typography-h2: 1.75rem;
     --ui-typography-h4: 1.125rem;
-    --ui-typography-p : 1.125rem;
+    --ui-typography-p : 1.325rem;
     --ui-typography-s : .875rem;
 
     /* MARGIN */
@@ -914,11 +915,11 @@ div label[for=ui-component-toggle__yearly] {
 
   /*------------------------------------------------------------
   |
-  | FEATURE
+  | PROJECTS
   |
   ------------------------------------------------------------*/
 
-  .ui-component-card--feature-content {
+  .ui-component-card--projects-content {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
   }
@@ -998,7 +999,10 @@ div label[for=ui-component-toggle__yearly] {
   
   .ui-layout-container { width: 60rem; }
 
-  .ui-layout-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .ui-layout-grid-3 { 
+    grid-template-columns: repeat(3, 1fr); 
+    padding-top: 2rem;
+  }
 
   .ui-layout-grid-3 div:nth-of-type(3) { position: static; }
 
@@ -1120,7 +1124,7 @@ div label[for=ui-component-toggle__yearly] {
   ------------------------------------------------------------*/
 
   .ui-section-hero {
-    padding-bottom: 0rem;
+    padding-bottom: 4rem;
   }
 
   /*------------------------------------------------------------
@@ -1137,13 +1141,14 @@ div label[for=ui-component-toggle__yearly] {
 
   /*------------------------------------------------------------
   |
-  | FEATURE
+  | PROJECTS
   |
   ------------------------------------------------------------*/
 
-  .ui-section-feature {
-    padding-bottom: 7.5rem;
-    padding-top: 7.5rem;
+  .ui-section-projects {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    
   }
 
   /*------------------------------------------------------------
