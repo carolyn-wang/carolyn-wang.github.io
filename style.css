@@ -111,6 +111,8 @@ TABLE OF CONTENT
   --ui-layout-grid     : 3.625rem;
   --ui-layout-margin     : 4rem;
   --ui-layout-gutter   :1rem;
+  --ui-sidenav-width: 14rem;
+  --ui-pfp-width: 200px;
 
   /* GAP */
   
@@ -149,9 +151,15 @@ body {
   font-size: var(--ui-typography-p);
   font-weight: 300;
   line-height: var(--ui-typography-p-leading);
-  margin: 0 auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  margin-left:  var(--ui-sidenav-width); /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 /*--------------------------------------------------------------
@@ -165,6 +173,7 @@ body {
   margin-bottom : 1.5rem;
   margin-right: 2rem;
   letter-spacing: .3rem; 
+  animation-delay: 2s;
   animation: 
     typing 1.6s steps(14, end),
     blink-caret 1s none infinite alternate;
@@ -212,7 +221,6 @@ h4 { color: var(--ui-color-typography-heading); }
 
 h1 {
   font-size: var(--ui-typography-h1);
-  font-family: 'Major Mono Display', monospace;
   line-height: var(--ui-typography-h1-leading);
 }
 
@@ -458,23 +466,39 @@ div label[for=ui-component-toggle__yearly] {
 |
 --------------------------------------------------------------*/
 
-.ui-section-header {
-  padding-bottom: 1.25rem;
-  padding-top: 1.25rem;
+/* SIDENAV */
+.sidenav {
+  height: 100%;
+  width: var(--ui-sidenav-width);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--ui-color-background-primary);
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right: 2px solid var(--ui-color-n-100) ;
 }
 
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
 
-.ui-section-header__layout { justify-content: left; }
+.sidenav a:hover {
+  color: #f1f1f1;
+}
 
-/* LOGO */
-
-.ui-section-header--logo { z-index: 1; }
+.sidenav a:focus {
+  color: red;
+}
 
 /* HAMBURGER */
 
-#ui-section-header--menu-id { display: none; }
-
-.ui-section-header--menu-icon {
+.ui-sidenav--menu-icon {
   cursor: pointer;
   display: block;
   height: 1.125rem;
@@ -483,31 +507,6 @@ div label[for=ui-component-toggle__yearly] {
   position: relative;
   width: 1.125rem;
   z-index: 1;
-}
-
-.ui-section-header--menu-icon::before,
-.ui-section-header--menu-icon::after {
-  background: var(--ui-color-brand);
-  content: "";
-  height: .125rem;
-  left: 0;
-  position: absolute;
-  transition: all 250ms cubic-bezier(.785, .135, .15, .86);
-  width: 1.125rem;
-}
-
-.ui-section-header--menu-icon::before { top: .3125rem; }
-
-.ui-section-header--menu-icon::after { top: .6875rem; }
-
-#ui-section-header--menu-id:checked ~
-.ui-section-header--menu-icon::before {
-  transform: translateY(3px) rotate(135deg);
-}
-
-#ui-section-header--menu-id:checked ~
-.ui-section-header--menu-icon::after {
-  transform: translateY(-3px) rotate(45deg);
 }
 
 /* MENU */
@@ -546,13 +545,14 @@ div label[for=ui-component-toggle__yearly] {
 |
 --------------------------------------------------------------*/
 
-.ui-section-hero {
+.ui-section-hero__layout {
   padding-bottom: 5rem;
   padding-top: 2rem;
   text-align: center;
+  row-gap: var(--ui-gap-hero);
+  margin: auto;
 }
 
-.ui-section-hero__layout { row-gap: var(--ui-gap-hero); }
 
 /*--------------------------------------------------------------
 |
@@ -573,6 +573,17 @@ div label[for=ui-component-toggle__yearly] {
 .ui-section-customer--logo-str { height: 1.75rem; }
   
 .ui-section-customer--logo-bhn { height: 1.375rem; }
+
+/*--------------------------------------------------------------
+|
+| 7.35 ABOUT ME
+|
+--------------------------------------------------------------*/
+
+.ui-section-about-me__layout{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  row-gap: var(--ui-gap-card); }
 
 /*--------------------------------------------------------------
 |
@@ -800,8 +811,14 @@ div label[for=ui-component-toggle__yearly] {
   IMAGE & TITLE TEXT 
   ------------------------------------------------------------*/
 
-  .ui-image-half-left {
-    padding: var(--ui-layout-gutter);
+  .ui-image-pfp {
+    margin: var(--ui-layout-gutter);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: var(--ui-pfp-width);
+    width: var(--ui-pfp-width);
+    border-radius: 100%;
   }
 
   .ui-text-half-right{

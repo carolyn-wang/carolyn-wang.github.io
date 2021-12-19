@@ -33,55 +33,43 @@
 </head>
 
 <body>
-  <header role="banner" class="ui-section-header">
-    <div class="ui-layout-container">
-      <div class="ui-section-header__layout ui-layout-flex">
-        <!-- LOGO
-        <a href="#" role="link" aria-label="#" class="ui-section-header--logo">
-          <svg viewBox="0 0 18 18" height="18" width="18" role="img" aria-label="#">
-          </svg>
-        </a> -->
-        <!-- HAMBURGER -->
-        <input type="checkbox" id="ui-section-header--menu-id">
-        <label for="ui-section-header--menu-id" class="ui-section-header--menu-icon"></label>
-        <!-- MENU -->
-        <nav role="navigation" class="ui-section-header--nav ui-layout-flex">
-          <a href="#" role="link" aria-label="#" class="ui-section-header--nav-link">Resume</a>
-          <a href="#projects" role="link" aria-label="#" class="ui-section-header--nav-link">Projects</a>
-          <a href="about.html" role="link" aria-label="#" class="ui-section-header--nav-link">About</a>
-        </nav>
-      </div>
-    </div>
+  <header class="sidenav">
+    <a href="#about" class="ui-sidenav--menu-icon">Carolyn</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </header>
+
   <main role="main">
-    <section id="home" class="ui-section-hero">
-      <div class="ui-layout-container">
-        <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
+    <section id="home" class="ui-section-hero__layout">
+      <!-- IMAGE -->
+      <img src="image/carolyn_wang.jpg" loading="lazy" alt="#" class="ui-image-pfp">
 
-          <!-- IMAGE -->
-          <img src="image/carolyn_wang.jpeg" loading="lazy" alt="#" class="ui-image-half-left">
+      <!-- COPYWRITING -->
+      <!-- <div class="typewriter">
+        <h1>carolyn wang</h1>
+      </div> -->
+      <h1>Carolyn Wang</h1>
 
-          <!-- COPYWRITING -->
-          <div class="ui-text-half-right">
-            <div class="typewriter css-typing">
-              <h1>carolyn wang</h1>
-            </div>
-            <div class="short-bio">
-              <p class="ui-text-intro">Hi! It's nice to meet you. My name is Carolyn and I'm a first year student at UC
-                Berkeley.</p>
-              <p class="ui-text-intro">I'm currently exploring tech, social good, and public policy. </p>
-            </div>
-            <!-- CTA -->
-            <div class="ui-component-cta ui-layout-flex">
-              <a href="about.html" role="link" aria-label="#"
-                class="ui-component-button ui-component-button-normal ui-component-button-primary">More about me</a>
-              <!-- <p class="ui-text-note">"oh no"</p> -->
-            </div>
-          </div>
-
-        </div>
+      <!-- CTA -->
+      <div class="ui-component-cta ui-layout-flex">
+        <a href="about.html" role="link" aria-label="#"
+          class="ui-component-button ui-component-button-normal ui-component-button-primary">More about me</a>
+        <!-- <p class="ui-text-note">"oh no"</p> -->
       </div>
     </section>
+
+    <section id="about-me" class="ui-section-about-me">
+      <div class="ui-layout-container">
+        <h2>About-Me</h2>
+    <div class="short-bio">
+      <p class="ui-text-intro">Hi! It's nice to meet you. My name is Carolyn and I'm a second-year student studying Computer Science & Political Economy at Berkeley. 
+      <p class="ui-text-intro">I'm currently exploring tech, social good, and public policy. </p>
+    </div>
+
+  </div>
+    </h2>
+    </section>  
 
     <section id="projects" class="ui-section-projects">
       <h2 style="text-align:center;">Projects</h2>
@@ -276,7 +264,7 @@
         <a href="https://github.com/carolyn-wang" target="_blank" role="link" aria-label="#">
           <img src="image/git_icon.png" height="22" width="22" />
         </a>
-        <a href="https://www.linkedin.com/in/carolynw318/" role="link" target="_blank" aria-label="#">
+        <a href="https://www.linkedin.com/in/carolyn-w/" role="link" target="_blank" aria-label="#">
           <img src="image/linkedin.png" height="22" width="22" />
         </a>
         <a href="mailto:carolynw@berkeley.edu" target="_blank" role="link" aria-label="#">
