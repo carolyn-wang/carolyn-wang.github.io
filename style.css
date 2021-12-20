@@ -158,38 +158,16 @@ body {
   line-height: var(--ui-typography-p-leading);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  margin-left:  var(--ui-sidenav-width); /* Same as the width of the sidenav */
   padding: 0px 10px;
+}
+
+main{
+  margin-left:  var(--ui-sidenav-width); /* Same as the width of the sidenav */
 }
 
 /*--------------------------------------------------------------
 3.0 TYPOGRAPHY
 --------------------------------------------------------------*/
-
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .08em solid var(--ui-color-pop); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin-bottom : 1.5rem;
-  margin-right: 2rem;
-  letter-spacing: .3rem; 
-  animation: 
-    typing 1.6s steps(14, end),
-    blink-caret 1s none infinite alternate;
-    
-}
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: var(--ui-color-pop) }
-}
-
 
 .short-bio{
   padding-top : 1rem;
@@ -290,12 +268,13 @@ svg {
     }
   }
    .scroll-btn {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    position: relative;
-    bottom: 0px;
-    width: 100%;
     z-index: 1;
+    width: 100%;
+    position: absolute;
+    bottom: 80px;
   }
   .scroll-btn > * {
     display: inline-block;
@@ -411,6 +390,11 @@ svg {
 .ui-component-button-big { width: 100%; }
 
 .ui-component-button-normal { width: fit-content; }
+
+.ui-component-button-small { 
+  font-size: var(--ui-typography-s);
+  padding: .5rem 1rem .5rem;
+}
 
 
 
@@ -547,7 +531,7 @@ div label[for=ui-component-toggle__yearly] {
 .sidenav {
   height: 100%;
   width: var(--ui-sidenav-width);
-  position: fixed;
+  position: sticky;
   z-index: 1;
   top: 0;
   left: 0;
@@ -561,7 +545,7 @@ div label[for=ui-component-toggle__yearly] {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: var(--ui-color-n-500);
   display: block;
 }
 
@@ -576,6 +560,11 @@ div label[for=ui-component-toggle__yearly] {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 8px;}
+}
+
+/* scrolling animation for hyperlinks */
+html {
+  scroll-behavior: smooth;
 }
 
 /* HAMBURGER */
@@ -628,6 +617,7 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 .ui-section-hero__layout {
+  position: relative;
   padding-bottom: 2rem;
   padding-top: 2rem;
   text-align: center;
@@ -663,7 +653,7 @@ div label[for=ui-component-toggle__yearly] {
 |
 --------------------------------------------------------------*/
 
-.ui-section-about-me__layout{
+.ui-section-about-me{
   padding-top: 5rem;
   padding-bottom: 5rem;
   row-gap: var(--ui-gap-card); }

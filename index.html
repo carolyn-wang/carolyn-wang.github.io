@@ -35,31 +35,21 @@
 <body>
   <header class="sidenav">
     <a href="#about" class="ui-sidenav--menu-icon">Carolyn</a>
-    <a href="#about">About</a>
+    <a href="#about-me">About</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </header>
-
   <main role="main">
     <section id="home" class="ui-section-hero__layout">
       <!-- IMAGE -->
       <img src="image/carolyn_wang.jpg" loading="lazy" alt="#" class="ui-image-pfp">
 
       <!-- INTRODUCTION -->
-      <!-- <div class="typewriter">
-        <h1>carolyn wang</h1>
-      </div> -->
       <h1>Carolyn Wang</h1>
-      <p class="ui-text-intro">
-        I'm a
-      <div class="typewriter">civic technologist</div>
-      </p>
 
-
-      <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-      <p>This pen is
+      <p>I'm a
         <span class="txt-rotate" data-period="2000"
-          data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'></span>
+          data-rotate='[ "coder.", "civic technologist.", "data scientist." ]'></span>
       </p>
 
       <!-- SOCIAL MEDIA ICONS -->
@@ -67,9 +57,8 @@
 
       <!-- CTA -->
       <div class="ui-component-cta ui-layout-flex">
-        <a href="about.html" role="link" aria-label="#"
-          class="ui-component-button ui-component-button-normal ui-component-button-primary">More about me</a>
-        <!-- <p class="ui-text-note">"oh no"</p> -->
+        <a href="#about-me" class="ui-component-button ui-component-button-normal ui-component-button-primary">More
+          about me</a>
       </div>
 
       <!-- MOUSE SCROLL ANIMATION -->
@@ -298,9 +287,10 @@
       </div>
     </section>
   </main>
-  <footer role="contentinfo" class="ui-section-footer">
-    <div class="ui-layout-container">
-      <div class="ui-section-footer__layout ui-layout-flex">
+
+  <div class="ui-layout-container">
+    <footer role="contentinfo" class="ui-section-footer">
+      <div class="ui-section-footer__layout ui-layout-flex"> -->
         <!-- COPYRIGHT -->
         <p class="ui-section-footer--copyright ui-text-note"><small>&copy; 2021 Carolyn Wang</small></p>
         <!-- MENU -->
@@ -314,8 +304,9 @@
           <img src="image/gmail.png" height="22" width="22" />
         </a>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
+
 
   <!-- Load React. -->
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
@@ -325,7 +316,7 @@
   <!-- Load our React component. -->
   <script src="index.js"></script>
   <script src="typewriter.js"></script>
-
+  <script src="sidenav.js"></script>
 
 </body>
 
