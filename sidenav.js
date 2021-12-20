@@ -1,4 +1,4 @@
-let mainNavLinks = document.querySelectorAll("nav ul li a");
+let mainNavLinks = document.querySelectorAll("header");
 let mainSections = document.querySelectorAll("main section");
 
 let lastId;

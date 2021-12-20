@@ -162,6 +162,7 @@ body {
 }
 
 main{
+  margin-top: -100vh;
   margin-left:  var(--ui-sidenav-width); /* Same as the width of the sidenav */
 }
 
@@ -529,7 +530,7 @@ div label[for=ui-component-toggle__yearly] {
 
 /* SIDENAV */
 .sidenav {
-  height: 100%;
+  height: 100vh;
   width: var(--ui-sidenav-width);
   position: sticky;
   z-index: 1;
