@@ -1,19 +1,31 @@
-window.addEventListener('DOMContentLoaded', () => {
+let mainNavLinks = document.querySelectorAll("nav ul li a");
+let mainSections = document.querySelectorAll("main section");
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const id = entry.target.getAttribute('id');
-      if (entry.intersectionRatio > 0) {
-        document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
-      } else {
-        document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
-      }
-    });
-  });
+let lastId;
+let cur = [];
 
-  // Track all sections that have an `id` applied
-  document.querySelectorAll('section[id]').forEach((section) => {
-    observer.observe(section);
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector(link.hash);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
   });
-  
 });
