@@ -568,6 +568,32 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 /* SIDENAV */
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 8px;}
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Make nav sticky */
+main > nav {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+}
+
+/* ScrollSpy active styles (see JS tab for activation) */
+.sidenav li.active > a {
+  color: var(--ui-color-pop);
+  font-weight: 800;
+}
+
+/* Sidebar Navigation */
 .sidenav {
   height: 100vh;
   width: var(--ui-sidenav-width);
@@ -577,35 +603,36 @@ div label[for=ui-component-toggle__yearly] {
   left: 0;
   background-color: var(--ui-color-background-primary);
   overflow-x: hidden;
-  border-right: 2px solid var(--ui-color-n-100) ;
-}
-
-.sidenav li.active > a {
-  color: red;
-  font-weight: 500;
-}
+  border-right: 2px solid var(--ui-color-n-100) ;}
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: var(--ui-typography-h3);
-  color: var(--ui-color-n-500);
   display: block;
+  padding: 6px 8px 6px 16px;
+  color: var(--ui-color-n-500);
+  font-size: var(--ui-typography-h3);
+  transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
 }
 
-.sidenav a:hover, .sidenav a:focus{
+.sidenav a:hover,
+.sidenav a:focus {
   color: var(--ui-color-pop);
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 8px;}
+/** Poor man's reset **/
+* {
+  box-sizing: border-box;
 }
 
-/* scrolling animation for hyperlinks */
-html {
-  scroll-behavior: smooth;
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+li {
+  margin-left: 1rem;
+}
+
 
 /* HAMBURGER */
 
