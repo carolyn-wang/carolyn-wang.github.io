@@ -170,7 +170,7 @@ main{
 3.0 TYPOGRAPHY
 --------------------------------------------------------------*/
 
-.short-bio{
+.short-description{
   padding-top : 1rem;
   padding-bottom: 1rem;
 }
@@ -226,7 +226,7 @@ small { font-size: var(--ui-typography-s); }
 
 .ui-text-note {
   color: var(--ui-color-typography-note);
-  line-height: 1;
+  line-height: 1.5;
 }
 
 /*--------------------------------------------------------------
@@ -249,6 +249,7 @@ svg {
   /*--------------------------------------------------------------
   4.2 MOUSE SCROLL ANIMATION
   --------------------------------------------------------------*/
+  @media screen and (min-height: 700px) {
 
   @keyframes ani-mouse {
     0% {
@@ -321,6 +322,13 @@ svg {
     border-radius: 50%;
     animation: ani-mouse 2.5s linear infinite;
   }
+}
+
+@media screen and (max-height: 700px) {
+  .scroll-btn {
+  visibility: hidden;
+  }
+}
 /*--------------------------------------------------------------
 5.0 LAYOUT
 --------------------------------------------------------------*/
@@ -932,7 +940,8 @@ html {
   }
 
   /* ICON */
-  .ui-section-header--menu-icon { display: none; }
+  .ui-section-header--menu-icon { 
+    display: none; }
 
   /*------------------------------------------------------------
   |
