@@ -389,8 +389,7 @@ svg {
 --------------------------------------------------------------*/
 
 .ui-layout-container {
-  padding-left: var(--ui-layout-container);
-  padding-right: var(--ui-layout-container);
+  padding: var(--ui-layout-container);
 }
 
 .ui-layout-flex,
@@ -610,7 +609,7 @@ input[name="toggle"] {
 7.0 SECTION
 --------------------------------------------------------------*/
 .ui-section {
-  padding-top: 2.5rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
 }
 

@@ -1,3 +1,4 @@
+// credit: code modified from https://codemyui.com/sticky-sidebar-navigation-on-scroll/
 let mainNavLinks = document.querySelectorAll("nav ul li a");
 let mainSections = document.querySelectorAll("main section");
 
@@ -14,7 +15,7 @@ let cur = [];
 // Only not doing it here to keep this Pen dependency-free.
 
 window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
+  let fromTop = window.scrollY + 4;
 
   mainNavLinks.forEach(link => {
     let section = document.querySelector(link.hash);
