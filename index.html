@@ -45,48 +45,75 @@
       <!-- IMAGE -->
       <img src="image/carolyn_wang.jpg" loading="lazy" alt="#" class="ui-image-pfp">
 
-      <!-- COPYWRITING -->
+      <!-- INTRODUCTION -->
       <!-- <div class="typewriter">
         <h1>carolyn wang</h1>
       </div> -->
       <h1>Carolyn Wang</h1>
       <p class="ui-text-intro">
-        I'm a civic technologist
+        I'm a
+      <div class="typewriter">civic technologist</div>
       </p>
+
+
+      <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+      <p>This pen is
+        <span class="txt-rotate" data-period="2000"
+          data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'></span>
+      </p>
+
+      <!-- SOCIAL MEDIA ICONS -->
+      <div id="social-container"></div>
+
       <!-- CTA -->
       <div class="ui-component-cta ui-layout-flex">
         <a href="about.html" role="link" aria-label="#"
           class="ui-component-button ui-component-button-normal ui-component-button-primary">More about me</a>
         <!-- <p class="ui-text-note">"oh no"</p> -->
       </div>
+
+      <!-- MOUSE SCROLL ANIMATION -->
+      <span class="scroll-btn">
+        <a href="#about-me">
+          <span class="mouse">
+            <span>
+            </span>
+          </span>
+        </a>
+        <p>scroll down</p>
+      </span>
+
     </section>
 
     <section id="about-me" class="ui-section-about-me">
       <div class="ui-layout-container">
         <h2>About Me</h2>
-    <div class="short-bio">
-      <p>Hi there! My name is Carolyn and I'm a second-year student at UC Berkeley.</p>
-      <p>I'm currently studying Computer Science and 
-        <a href="https://www.investopedia.com/terms/p/political-economy.asp#:~:text=Political%20economy%20is%20an%20interdisciplinary,work%20in%20the%20real%20world." target="_blank">
-        Political Economy</a>, but 
-        that's just my formalized way of saying that I love coding, 
-        data predictions, public policy, <a href="https://medium.com/@CivicWhitaker/what-is-civic-tech-b61a58c3eba8" target="_blank">
-        civic tech</a>, and more. Ultimately, I use my 
-        technical skills to inform better policy-making and improve 
-        access to public services. </p>
-      <p> If you'd like something more formal, here's my resume. </p>
-      <p>But if you'd like to learn about some more interesting things about me, let me show you some
-      of my favorite songs, my <a href="https://carolynwang.webnode.com/" target="_blank">artwork</a>,
-       and my favorite poetry. </p>
-    </div>
+        <div class="short-bio">
+          <p>Hi there! My name is Carolyn and I'm a second-year student at UC Berkeley.</p>
+          <p>I'm currently studying Computer Science and
+            <a href="https://www.investopedia.com/terms/p/political-economy.asp#:~:text=Political%20economy%20is%20an%20interdisciplinary,work%20in%20the%20real%20world."
+              target="_blank">
+              Political Economy</a>, but
+            that's just my formalized way of saying that I love coding,
+            data predictions, public policy, <a href="https://medium.com/@CivicWhitaker/what-is-civic-tech-b61a58c3eba8"
+              target="_blank">
+              civic tech</a>, and more. Ultimately, my goal is to use my
+            technical skills to inform better policy-making and improve
+            access to public services.
+          </p>
+          <p> If you'd like something formal, here's my resume. </p>
+          <p>But if you'd like to learn something more interesting about me, let me show you some
+            of my favorite songs, my <a href="https://carolynwang.webnode.com/" target="_blank">artwork</a>,
+            and my favorite poetry. </p>
+        </div>
 
-  </div>
-    </h2>
-    </section>  
+      </div>
+      </h2>
+    </section>
 
     <section id="projects" class="ui-section-projects">
       <div class="ui-layout-container">
-        <h2>Projects</h2>
+        <h2>Side Projects</h2>
         <div class="ui-section-projects__layout ui-layout-grid ui-layout-grid-3">
           <div class="ui-component-card ui-component-card--projects draw-border">
             <a href="https://benevolentoranges.games/" target="_blank">
@@ -94,7 +121,8 @@
               <!--4x3 gif -->
             </a>
             <div class="ui-component-card--projects-content">
-              <h4 class="ui-component-card--projects-title">Benevolent Oranges</h4>
+              <h4 class="ui-component-card--projects-title"><a href="https://benevolentoranges.games/" target="_blank">
+                  Benevolent Oranges</a></h4>
 
               <p>Full stack multi-player game </p>
               <p class="ui-text-note">HTML, CSS, Javascript</p>
@@ -109,7 +137,10 @@
               <img src="image/scope.gif" alt="#" loading="lazy">
             </a>
             <div class="ui-component-card--projects-content">
-              <h4 class="ui-component-card--projects-title">SCOPE @ Berkeley</h4>
+              <h4 class="ui-component-card--projects-title">
+                <a href="https://carolyn-wang.github.io/scope-berkeley/" target="_blank">
+                  SCOPE @ Berkeley</a>
+              </h4>
               <p>Event website with parallax scrolling effect</p>
               <p class="ui-text-note">HTML, CSS, Javascript</p>
               <a href="https://github.com/carolyn-wang/scope-berkeley" target="_blank" role="link" aria-label="#">
@@ -285,6 +316,17 @@
       </div>
     </div>
   </footer>
+
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="index.js"></script>
+  <script src="typewriter.js"></script>
+
+
 </body>
 
 </html>

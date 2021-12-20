@@ -47,7 +47,7 @@ TABLE OF CONTENT
 
   /* COLOR PALETTE */
 
-  --ui-color-pop:  rgb(0, 183, 207);
+  --ui-color-pop:  rgb(64, 185, 233);
   --ui-color-n-000: #fff;
   --ui-color-n-050: #f5f5f5;
   --ui-color-n-100: #ebebeb;
@@ -72,6 +72,11 @@ TABLE OF CONTENT
   --ui-color-typography-body   : var(--ui-color-n-900);
   --ui-color-typography-note   : var(--ui-color-n-300);
   --ui-color-typography-button : var(--ui-color-n-000);
+
+  /* MOUSE ANIMATION COLOR */
+  --ui-color-mouse: var(--ui-color-n-500);
+  --ui-color-mouse-hover: var(--ui-color-n-300);
+
 
   /*------------------------------------------------------------
   |
@@ -157,23 +162,17 @@ body {
   padding: 0px 10px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 /*--------------------------------------------------------------
 3.0 TYPOGRAPHY
 --------------------------------------------------------------*/
 
-.typewriter h1 {
+.typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .08em solid var(--ui-color-pop); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin-bottom : 1.5rem;
   margin-right: 2rem;
   letter-spacing: .3rem; 
-  animation-delay: 2s;
   animation: 
     typing 1.6s steps(14, end),
     blink-caret 1s none infinite alternate;
@@ -191,12 +190,11 @@ body {
   50% { border-color: var(--ui-color-pop) }
 }
 
+
 .short-bio{
   padding-top : 1rem;
   padding-bottom: 1rem;
 }
-
-
 
 a {
   color: var(--ui-color-brand);
@@ -264,6 +262,85 @@ svg {
   max-width: 100%;
 }
 
+  /*--------------------------------------------------------------
+  4.1 SOCIAL MEDIA ICONS
+  --------------------------------------------------------------*/
+
+
+  /*--------------------------------------------------------------
+  4.2 MOUSE SCROLL ANIMATION
+  --------------------------------------------------------------*/
+
+  @keyframes ani-mouse {
+    0% {
+    opacity: 1;
+    top: 29%;
+    }
+    15% {
+    opacity: 1;
+    top: 50%;
+    }
+    50% {
+    opacity: 0;
+    top: 50%;
+    }
+    100% {
+    opacity: 0;
+    top: 29%;
+    }
+  }
+   .scroll-btn {
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+  .scroll-btn > * {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--ui-color-mouse);
+    letter-spacing: 1px;
+  }
+  .scroll-btn > *:hover,
+  .scroll-btn > *:focus,
+  .scroll-btn > *.active {
+    color: var(--ui-color-mouse);
+  }
+  .scroll-btn > *:hover,
+  .scroll-btn > *:focus,
+  .scroll-btn > *:active,
+  .scroll-btn > *.active {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+  }
+  .scroll-btn .mouse {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 37px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid var(--ui-color-mouse);
+    border-radius: 23px;
+  }
+  .scroll-btn .mouse > * {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    margin: -2.5px 0 0 -2.5px;
+    background: var(--ui-color-mouse);
+    border-radius: 50%;
+    animation: ani-mouse 2.5s linear infinite;
+  }
 /*--------------------------------------------------------------
 5.0 LAYOUT
 --------------------------------------------------------------*/
@@ -496,6 +573,11 @@ div label[for=ui-component-toggle__yearly] {
   color: red;
 }
 
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 8px;}
+}
+
 /* HAMBURGER */
 
 .ui-sidenav--menu-icon {
@@ -546,11 +628,12 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 .ui-section-hero__layout {
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   padding-top: 2rem;
   text-align: center;
   row-gap: var(--ui-gap-hero);
   margin: auto;
+  min-height: 100vh
 }
 
 
