@@ -28,6 +28,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
   <link rel="preload" as="style" href="style.css">
   <link rel="stylesheet" href="style.css">
+  <!-- ICONS -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!-- TITLE -->
   <title>Carolyn Wang</title>
 </head>
@@ -35,9 +37,9 @@
 <body>
   <header class="sidenav">
     <a href="#home" class="ui-sidenav--menu-icon">Carolyn Wang</a>
-    <a href="#about-me">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#about-me" class="about">About</a>
+    <a href="#projects" class="projects">Projects</a>
+    <a href="#contact" class="contact">Contact</a>
   </header>
   <main role="main">
     <section id="home" class="ui-section-hero__layout">
@@ -53,8 +55,19 @@
       </p>
 
       <!-- SOCIAL MEDIA ICONS -->
-      <div id="social-container"></div>
 
+      <div class="ui-component-cta ui-layout-flex">
+      <div class="socialbtns">
+        <ul>
+          <li><a href="https://github.com/carolyn-wang" class="fa fa-lg fa-github"></a></li>
+          <li><a href="mailto:carolynw@berkeley.edu" class="fa fa-lg fa-inbox"></a></li>
+          <li><a href="https://www.linkedin.com/in/carolyn-w/" class="fa fa-lg fa-linkedin"></a></li>
+        </ul>
+      </div>
+      <div>
+    </div>
+    </div>
+      
       <!-- CTA -->
       <div class="ui-component-cta ui-layout-flex">
         <a href="#about-me" class="ui-component-button ui-component-button-light 
@@ -68,10 +81,9 @@
             <span>
             </span>
           </span>
-        <p class="no-line">scroll down</p>
-      </a>
+          <p class="no-line">scroll down</p>
+        </a>
       </span>
-
     </section>
 
     <section id="about-me" class="ui-section-about-me">
@@ -83,10 +95,10 @@
             <a href="https://www.investopedia.com/terms/p/political-economy.asp#:~:text=Political%20economy%20is%20an%20interdisciplinary,work%20in%20the%20real%20world."
               target="_blank">
               Political Economy</a>, which is just a formalized way of saying that I love coding,
-            <a href="https://www.reddit.com/r/dataisbeautiful/" target="_blank">data visualizations</a>, public policy, 
+            <a href="https://www.reddit.com/r/dataisbeautiful/" target="_blank">data visualizations</a>, public policy,
             <a href="https://medium.com/@CivicWhitaker/what-is-civic-tech-b61a58c3eba8" target="_blank">
-              civic tech</a>, and more. Ultimately, my goal is to use my 
-              data prediction and machine learning skills to inform better policy-making.
+              civic tech</a>, and more. Ultimately, my goal is to use my
+            data prediction and machine learning skills to inform better policy-making.
           </p>
           <p> If you'd like something formal, here's my resume. </p>
           <p>But if you'd like to learn something more interesting about me, let me show you some
@@ -96,66 +108,83 @@
 
       </div>
       </h2>
+      <social-icons></social-icons>
     </section>
+
+    <!-- PROJECTS -->
 
     <section id="projects" class="ui-section-projects">
       <div class="ui-layout-container">
         <h2>Side Projects</h2>
         <div class="short-description">
-          <p> I'm a self-taught web developer and I love designing and coding websites
-            for fun in my freetime. Here are a few of my creations.
+          <p> Designing and coding websites is actually one of my
+            favorite things to do for fun in my free time.
+            I'm mostly self-taught as a web-developer, but here are a few of my creations.
           </p>
-          <div class= "ui-text-note"> Click on the upper-half image to go to the website, or
-            click on the bottom-half of the card for more information. 
+          <div class="ui-text-note"> Click on the upper-half image to go to the website, or
+            click on the bottom-half of the card for more information.
           </div>
-        <div class="ui-section-projects__layout ui-layout-grid ui-layout-grid-3">
-          <div class="ui-component-card ui-component-card--projects draw-border">
-            <a href="https://carolyn-wang.github.io/oranges/" target="_blank">
-              <img src="image/oranges.gif" alt="#" loading="lazy">
-              <!--4x3 gif -->
-            </a>
-            <div class="ui-component-card--projects-content">
-              <h4 class="ui-component-card--projects-title">Benevolent Oranges</h4>
-              <p>Full stack multi-player game </p>
-              <p class="ui-text-note">HTML, CSS, Javascript</p>
-              <a href="https://github.com/carolyn-wang/oranges" target="_blank" role="link" aria-label="#">
-                <img src="image/git_icon.png" height="22" width="22" />
+          <div class="ui-section-projects__layout ui-layout-grid ui-layout-grid-3">
+            <div class="ui-component-card ui-component-card--projects draw-border">
+              <a href="https://carolyn-wang.github.io/oranges/" target="_blank">
+                <img src="image/oranges.gif" alt="#" loading="lazy">
+                <!--4x3 gif -->
               </a>
+              <div class="ui-component-card--projects-content">
+                <h4 class="ui-component-card--projects-title">Benevolent Oranges</h4>
+                <p>Full stack multi-player game </p>
+                <p class="ui-text-note">HTML, CSS, Javascript</p>
+                <a href="https://github.com/carolyn-wang/oranges" target="_blank" role="link" aria-label="#">
+                  <img src="image/git_icon.png" height="22" width="22" />
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="ui-component-card ui-component-card--projects draw-border">
-            <a href="https://carolyn-wang.github.io/scope-berkeley/" target="_blank">
-              <img src="image/scope.gif" alt="#" loading="lazy">
-            </a>
-            <div class="ui-component-card--projects-content">
-              <h4 class="ui-component-card--projects-title">SCOPE @ Berkeley</h4>
-              <p>Event website with parallax scrolling effect</p>
-              <p class="ui-text-note">HTML, CSS, Javascript</p>
-              <a href="https://github.com/carolyn-wang/scope-berkeley" target="_blank" role="link" aria-label="#">
-                <img src="image/git_icon.png" height="22" width="22" />
+            <div class="ui-component-card ui-component-card--projects draw-border">
+              <a href="https://carolyn-wang.github.io/scope-berkeley/" target="_blank">
+                <img src="image/scope.gif" alt="#" loading="lazy">
               </a>
+              <div class="ui-component-card--projects-content">
+                <h4 class="ui-component-card--projects-title">SCOPE @ Berkeley</h4>
+                <p>Event website with parallax scrolling effect</p>
+                <p class="ui-text-note">HTML, CSS, Javascript</p>
+                <a href="https://github.com/carolyn-wang/scope-berkeley" target="_blank" role="link" aria-label="#">
+                  <img src="image/git_icon.png" height="22" width="22" />
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="ui-component-card ui-component-card--projects draw-border">
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/graphics/notification.png" alt="#"
-              loading="lazy">
-            <div class="ui-component-card--projects-content ">
-              <h4 class="ui-component-card--projects-title">Lorem ipsum dolor.</h4>
-              <p>Lorem ipsum dolor sit amet sed eiusmod tempor incididunt.</p>
+            <div class="draw-border ui-component-card ui-component-card--projects ">
+              <a href="https://carolyn-wang.github.io/scope-berkeley/" target="_blank">
+                <img src="image/scope.gif" alt="#" loading="lazy">
+              </a>
+              <div class="ui-component-card--projects-content">
+                <h4 class="ui-component-card--projects-title">SCOPE @ Berkeley</h4>
+                <p>Event website with parallax scrolling effect</p>
+                <p class="ui-text-note">HTML, CSS, Javascript</p>
+                <a href="https://github.com/carolyn-wang/scope-berkeley" target="_blank" role="link" aria-label="#">
+                  <img src="image/git_icon.png" height="22" width="22" />
+                </a>
+              </div>
+            </div>
+
+            <div class="ui-component-card ui-component-card--projects draw-border">
+              <img src="https://res.cloudinary.com/uisual/image/upload/assets/graphics/notification.png" alt="#"
+                loading="lazy">
+              <div class="ui-component-card--projects-content ">
+                <h4 class="ui-component-card--projects-title">Lorem ipsum dolor.</h4>
+                <p>Lorem ipsum dolor sit amet sed eiusmod tempor incididunt.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
     </section>
 
-  <div class="ui-layout-container">
-  <icons-footer></icons-footer>
+    <div class="ui-layout-container">
+      <icons-footer></icons-footer>
+    </div>
   </main>
-
-  </div>
 
 
   <!-- Load React. -->
@@ -163,11 +192,11 @@
   <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 
-  <!-- Load our React component. -->
-  <script src="index.js"></script>
-  <script src="typewriter.js"></script>
-  <script src="sidenav.js"></script>
-  <script src="iconsfooter.js"></script>
+  <!-- Load React components -->
+  <script src="js/index.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/sidenav.js"></script>
+  <script src="js/icons-footer.js"></script>
 
 </body>
 
