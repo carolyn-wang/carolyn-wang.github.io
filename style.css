@@ -580,6 +580,11 @@ div label[for=ui-component-toggle__yearly] {
   border-right: 2px solid var(--ui-color-n-100) ;
 }
 
+.sidenav li.active > a {
+  color: red;
+  font-weight: 500;
+}
+
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -658,7 +663,7 @@ html {
 |
 --------------------------------------------------------------*/
 
-.ui-section-about-me{
+.ui-section-about{
   padding-top: 5rem;
   padding-bottom: 5rem;
   row-gap: var(--ui-gap-card); }

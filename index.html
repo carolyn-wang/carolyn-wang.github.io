@@ -35,11 +35,13 @@
 </head>
 
 <body>
-  <header class="sidenav">
-    <a href="#home" class="ui-sidenav--menu-icon">Carolyn Wang</a>
-    <a href="#about-me" class="about">About</a>
-    <a href="#projects" class="projects">Projects</a>
-    <a href="#contact" class="contact">Contact</a>
+  <header class="sidenav" id="sidenav">
+    <ul>
+    <li><a href="#home" class="ui-sidenav--menu-icon">Carolyn Wang</a></li>
+    <li><a href="#about" class="about">About</a></li>
+    <li><a href="#projects" class="projects">Projects</a></li>
+    <li><a href="#contact" class="contact">Contact</a></li>
+  </ul>
   </header>
   <main role="main">
     <section id="home" class="ui-section-hero__layout">
@@ -59,9 +61,9 @@
       <div class="ui-component-cta ui-layout-flex">
       <div class="socialbtns">
         <ul>
-          <li><a href="https://github.com/carolyn-wang" class="fa fa-lg fa-github"></a></li>
-          <li><a href="mailto:carolynw@berkeley.edu" class="fa fa-lg fa-inbox"></a></li>
-          <li><a href="https://www.linkedin.com/in/carolyn-w/" class="fa fa-lg fa-linkedin"></a></li>
+          <li><a href="https://github.com/carolyn-wang" target="_blank" class="fa fa-lg fa-github"></a></li>
+          <li><a href="mailto:carolynw@berkeley.edu" target="_blank" class="fa fa-lg fa-inbox"></a></li>
+          <li><a href="https://www.linkedin.com/in/carolyn-w/" target="_blank" class="fa fa-lg fa-linkedin"></a></li>
         </ul>
       </div>
       <div>
@@ -70,13 +72,13 @@
       
       <!-- CTA -->
       <div class="ui-component-cta ui-layout-flex">
-        <a href="#about-me" class="ui-component-button ui-component-button-light 
+        <a href="#about" class="ui-component-button ui-component-button-light 
         ui-component-button-primary"> Resume/CV</a>
       </div>
 
       <!-- MOUSE SCROLL ANIMATION -->
       <span class="scroll-btn">
-        <a href="#about-me">
+        <a href="#about">
           <span class="mouse">
             <span>
             </span>
@@ -86,11 +88,11 @@
       </span>
     </section>
 
-    <section id="about-me" class="ui-section-about-me">
+    <section id="about" class="ui-section-about">
       <div class="ui-layout-container">
         <h2>About Me</h2>
         <div class="short-description">
-          <p>Hi there! My name is Carolyn and I'm a second-year student at UC Berkeley.</p>
+          <p>Hi! My name is Carolyn and I'm a second-year student at UC Berkeley.</p>
           <p>I'm currently studying Computer Science and
             <a href="https://www.investopedia.com/terms/p/political-economy.asp#:~:text=Political%20economy%20is%20an%20interdisciplinary,work%20in%20the%20real%20world."
               target="_blank">
@@ -103,12 +105,11 @@
           <p> If you'd like something formal, here's my resume. </p>
           <p>But if you'd like to learn something more interesting about me, let me show you some
             of my favorite songs, my <a href="https://carolynwang.webnode.com/" target="_blank">artwork</a>,
-            and some poetry I like. </p>
+            and some poetry that I like. </p>
         </div>
 
       </div>
       </h2>
-      <social-icons></social-icons>
     </section>
 
     <!-- PROJECTS -->
@@ -117,9 +118,7 @@
       <div class="ui-layout-container">
         <h2>Side Projects</h2>
         <div class="short-description">
-          <p> Designing and coding websites is actually one of my
-            favorite things to do for fun in my free time.
-            I'm mostly self-taught as a web-developer, but here are a few of my creations.
+          <p> I design and code websites for fun in my free time. Here are a few of my creations.
           </p>
           <div class="ui-text-note"> Click on the upper-half image to go to the website, or
             click on the bottom-half of the card for more information.
