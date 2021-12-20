@@ -87,7 +87,7 @@ TABLE OF CONTENT
 
   /* FONT SIZE */
 
-  --ui-typography-h1: 7rem;
+  --ui-typography-h1: 5rem;
   --ui-typography-h2: 1.5625rem;
   --ui-typography-h3: 1.25rem;
   --ui-typography-h4: 1rem;
@@ -173,6 +173,10 @@ main{
 .short-description{
   padding-top : 1rem;
   padding-bottom: 1rem;
+}
+
+.no-line{
+  text-decoration: none;
 }
 
 a {
@@ -278,12 +282,14 @@ svg {
     position: absolute;
     bottom: 80px;
   }
+
   .scroll-btn > * {
     display: inline-block;
     line-height: 18px;
     font-size: 13px;
     font-weight: normal;
     color: var(--ui-color-mouse);
+    text-decoration: none;
     letter-spacing: 1px;
   }
   .scroll-btn > *:hover,
@@ -394,15 +400,22 @@ svg {
 }
 
 .ui-component-button-big,
-.ui-component-button-normal { padding: .75rem 1.5rem .75rem; }
+.ui-component-button-normal,
+.ui-component-button-light { padding: .75rem 1.5rem .75rem; }
 
 .ui-component-button-big { width: 100%; }
 
 .ui-component-button-normal { width: fit-content; }
 
-.ui-component-button-small { 
-  font-size: var(--ui-typography-s);
+.ui-component-button-light { 
+  font-weight: 400;
+  font-size: var(--ui-typography-p);
   padding: .5rem 1rem .5rem;
+}
+
+.ui-component-button-small { 
+font-size: var(--ui-typography-s);
+padding: .5rem 1rem .5rem;
 }
 
 
@@ -569,11 +582,6 @@ div label[for=ui-component-toggle__yearly] {
 /* scrolling animation for hyperlinks */
 html {
   scroll-behavior: smooth;
-}
-
-/* removes line for some hyperlinks */
-.no-line{
-  text-decoration: none;
 }
 
 /* HAMBURGER */
