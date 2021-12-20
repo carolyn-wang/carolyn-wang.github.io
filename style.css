@@ -294,7 +294,7 @@ svg {
   .scroll-btn > *:focus,
   .scroll-btn > *:active,
   .scroll-btn > *.active {
-    opacity: 0.8;
+    opacity: 0.5;
     filter: alpha(opacity=80);
   }
   .scroll-btn .mouse {
@@ -566,6 +566,11 @@ div label[for=ui-component-toggle__yearly] {
 /* scrolling animation for hyperlinks */
 html {
   scroll-behavior: smooth;
+}
+
+/* removes line for some hyperlinks */
+.no-line{
+  text-decoration: none;
 }
 
 /* HAMBURGER */
