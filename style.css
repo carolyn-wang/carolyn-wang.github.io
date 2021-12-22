@@ -92,8 +92,9 @@ TABLE OF CONTENT
   --ui-typography-h3: 1.25rem;
   --ui-typography-h4: 1rem;
   --ui-typography-p: 1rem;
-  --ui-typography-s: .5rem;
-  --ui-typography-body: 16px;
+  --ui-typography-ul: 1.25rem;
+  --ui-typography-s: .75rem;
+  --ui-typography-body: 18px;
 
   /* LEADING */
 
@@ -229,8 +230,7 @@ h4 {
   line-height: var(--ui-typography-h4-leading);
 }
 
-p,
-ul {
+p{
   font-size: var(--ui-typography-p);
   margin-bottom: var(--ui-typography-margin-body);
 }
@@ -242,6 +242,8 @@ ul:last-child {
 
 ul {
   padding-left: 0;
+  font-size: var(--ui-typography-ul);
+  margin-bottom: var(--ui-typography-margin-body);
 }
 
 strong {
@@ -308,8 +310,8 @@ svg {
 }
 
 .socialbtns .fa {
-  width: 40px;
-  height: 28px;
+  width: 2rem;
+  height: 1rem;
 }
 
 .socialbtns .fa:hover {
@@ -416,6 +418,7 @@ svg {
 
 .ui-layout-container {
   padding: var(--ui-layout-container);
+  width: 70rem;
 }
 
 .ui-layout-flex,
@@ -430,6 +433,35 @@ svg {
 
 .ui-layout-grid {
   display: grid;
+}
+
+/* center containers */
+.ui-layout-container,
+.ui-layout-column-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ui-layout-grid-2,
+.ui-layout-grid-3,
+.ui-layout-grid-4
+{
+  padding-top: 2rem;
+  column-gap: var(--ui-layout-gutter);
+}
+
+.ui-layout-grid-2{
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.ui-layout-grid-3 {
+  column-gap: var(--ui-layout-gutter);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.ui-layout-column-4 {
+  width: calc((var(--ui-layout-grid) * 4) + (var(--ui-layout-gutter) * 3));
 }
 
 /*--------------------------------------------------------------
@@ -689,7 +721,7 @@ main>nav {
   display: block;
   padding: 6px 8px 6px 16px;
   color: var(--ui-color-n-500);
-  font-size: var(--ui-typography-p);
+  font-size: var(--ui-typography-ul);
   transition: all 50ms ease-in-out;
   /* 💡 This small transition makes setting of the active state smooth */
 }
@@ -728,11 +760,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-li {
-  margin-left: 1rem;
-}
-
 
 .ui-sidenav--name {
   padding-top: 30px;
