@@ -143,6 +143,11 @@ TABLE OF CONTENT
 
 html {
   box-sizing: border-box;
+  font-size: 100%;
+
+@media (min-width: 768px) {
+font-size: 112.5%;
+}
 }
 
 *,
@@ -156,7 +161,7 @@ body {
   color: var(--ui-color-typography-body);
   font-family: var(--ui-typography-typeface);
   font-feature-settings: "liga", "kern";
-  font-size: var(--ui-typography-p);
+  font-size: var(--ui-typography-body);
   font-weight: normal;
   line-height: var(--ui-typography-p-leading);
   text-rendering: optimizeLegibility;
@@ -993,6 +998,7 @@ li {
     --ui-typography-h4: 1rem;
     --ui-typography-p: 1rem;
     --ui-typography-s: .8rem;
+    --ui-typography-body: 14px;
 
     /* MARGIN */
 
