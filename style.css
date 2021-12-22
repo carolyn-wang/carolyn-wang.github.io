@@ -855,13 +855,13 @@ ul {
 |
 --------------------------------------------------------------*/
 
-.ui-section-projects__layout {
+/* .ui-section-projects__layout {
   row-gap: var(--ui-gap-card);
 }
 
 /* CARD */
 
-.ui-component-card--projects {
+/* .ui-component-card--projects {
   text-align: center;
 }
 
@@ -885,7 +885,7 @@ ul {
 .component-card--projects-note{
   position: relative;
   bottom: 20%;
-}
+}  */
 
 /*--------------------------------------------------------------
 |
