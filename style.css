@@ -87,11 +87,11 @@ TABLE OF CONTENT
 
   /* FONT SIZE */
 
-  --ui-typography-h1: 5rem;
+  --ui-typography-h1: 4.5rem;
   --ui-typography-h2: 1.5625rem;
   --ui-typography-h3: 1.25rem;
   --ui-typography-h4: 1rem;
-  --ui-typography-p: .1rem;
+  --ui-typography-p: .5rem;
   --ui-typography-s: .8125rem;
 
   /* LEADING */
@@ -654,6 +654,7 @@ main>nav {
   left: 0;
   overflow-x: hidden;
   border-right: 1px solid var(--ui-color-n-100);
+  background-color: var(--ui-color-background-primary);
 }
 
 .sidenav a{
@@ -1091,8 +1092,7 @@ li {
   ------------------------------------------------------------*/
 
   .ui-section {
-    padding-top: var(--ui-layout-gutter);
-    padding-bottom: var(--ui-layout-gutter);
+    padding: var(--ui-layout-gutter);
 }
   /*------------------------------------------------------------
   |
