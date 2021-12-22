@@ -91,7 +91,7 @@ TABLE OF CONTENT
   --ui-typography-h2: 1.5625rem;
   --ui-typography-h3: 1.25rem;
   --ui-typography-h4: 1rem;
-  --ui-typography-p: 1rem;
+  --ui-typography-p: 1.075rem;
   --ui-typography-ul: 1.25rem;
   --ui-typography-s: .75rem;
   --ui-typography-body: 18px;
@@ -879,7 +879,13 @@ ul {
 }
 
 .ui-component-card--projects-title {
+  font-size: var(--ui-typography-h3);
   margin-bottom: .5rem;
+}
+
+.component-card--projects-note{
+  position: relative;
+  bottom: 20%;
 }
 
 /*--------------------------------------------------------------
