@@ -91,7 +91,7 @@ TABLE OF CONTENT
   --ui-typography-h2: 1.5625rem;
   --ui-typography-h3: 1.25rem;
   --ui-typography-h4: 1rem;
-  --ui-typography-p: .5rem;
+  --ui-typography-p: 1rem;
   --ui-typography-s: .8125rem;
 
   /* LEADING */
@@ -221,6 +221,7 @@ h4 {
 
 p,
 ul {
+  font-size: var(--ui-typography-p);
   margin-bottom: var(--ui-typography-margin-body);
 }
 
