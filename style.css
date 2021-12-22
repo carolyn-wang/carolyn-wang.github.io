@@ -92,7 +92,7 @@ TABLE OF CONTENT
   --ui-typography-h3: 1.25rem;
   --ui-typography-h4: 1rem;
   --ui-typography-p: 1rem;
-  --ui-typography-s: .8125rem;
+  --ui-typography-s: .5rem;
 
   /* LEADING */
 
@@ -172,6 +172,7 @@ body {
 main {
   margin-top: -100vh;
   margin-left: var(--ui-sidenav-width);
+  max-width: 100vw - var(--ui-sidenav-width);
   /* Same as the width of the sidenav */
 }
 
