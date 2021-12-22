@@ -5,6 +5,11 @@ class IconsFooter extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
+        <style>
+        a{
+          padding: 0.5rem;
+        }
+        </style>
         <footer role="contentinfo" class="ui-section-footer">
         <div class="ui-section-footer__layout ui-layout-flex">
           <!-- COPYRIGHT -->

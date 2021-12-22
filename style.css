@@ -855,37 +855,9 @@ ul {
 |
 --------------------------------------------------------------*/
 
-/* .ui-section-projects__layout {
+ .ui-section-projects__layout {
   row-gap: var(--ui-gap-card);
 }
-
-/* CARD */
-
-/* .ui-component-card--projects {
-  text-align: center;
-}
-
-.ui-component-card--projects-image {
-  max-height: 15rem;
-  height: 15rem;
-  overflow: hidden;
-}
-
-.ui-component-card--projects-content {
-  padding: 2.25rem 1.5rem;
-  max-height: 18rem;
-  height: 18rem;
-}
-
-.ui-component-card--projects-title {
-  font-size: var(--ui-typography-h3);
-  margin-bottom: .5rem;
-}
-
-.component-card--projects-note{
-  position: relative;
-  bottom: 20%;
-}  */
 
 /*--------------------------------------------------------------
 |

@@ -14,70 +14,65 @@ class ProjectCard extends HTMLElement {
         this.template.innerHTML = ` 
         <style>
 
-        h4 {
+        h3{
             color: var(--ui-color-typography-heading);
-            font-size: var(--ui-typography-h4);
+            font-size: var(--ui-typography-h3);
             line-height: var(--ui-typography-h4-leading);
           }
-
-        .ui-section-projects__layout {
-            row-gap: var(--ui-gap-card);
-          }
-          
-          /* CARD */
-
-          .ui-component-card {
-            border: .0625rem solid var(--ui-color-border);
-            border-radius: var(--ui-radius-card);
-            overflow: hidden;
-            width: 100%;
-          }
-          
-          .ui-component-card--projects {
-            text-align: center;
-          }
-          
-          .ui-component-card--projects-image {
-            max-height: 15rem;
-            height: 15rem;
-            overflow: hidden;
-          }
-          
-          .ui-component-card--projects-content {
-            padding: 2.25rem 1.5rem;
-            max-height: 18rem;
-            height: 18rem;
-          }
-          
-          .ui-component-card--projects-title {
-            font-size: var(--ui-typography-h3);
-            margin-bottom: .5rem;
-          }
-          
-          .component-card--projects-note{
-            position: relative;
-            bottom: 20%;
+        
+        h4{
             color: var(--ui-color-typography-note);
+            font-size: var(--ui-typography-h4);
+            line-height: var(--ui-typography-h4-leading);
+            bottom: 20%;
             line-height: 1.5;
           }
 
+          .image-container{
+            max-height: 15rem;
+            overflow: hidden;
+          }
+
+          img {
+            object-fit: scale-down;
+            max-width: 100%;
+          }
+          
+          .content {
+            padding: 1rem 1.5rem;
+            max-height: 18rem;
+            height: 18rem;
+            text-align: center;
+          }
+          
+          .title {
+            font-size: var(--ui-typography-h3);
+            margin-bottom: .5rem;
+          }
+
+          .icon{
+            text-decoration: none;
+            padding: 0.3rem;
+          }
+          
         </style>
 
-        <div class="ui-component-card ui-component-card--projects">
-        <div class="ui-component-card--projects-image">
+        <div class="image-container">
         <a href="${this.link}" target="_blank">
           <img src="${this.img}" alt="#" loading="lazy">
         </a>
         </div>
-        <div class="ui-component-card--projects-content">
-          <h4 class="ui-component-card--projects-title">${this.title}</h4>
+        <div class="content">
+          <h3 class="title">${this.name}</h3>
           <p>${this.description}</p>
-          <p class="ui-component-card--projects-note">${this.lang}</p>
-          <a href="${this.github}" target="_blank" role="link" aria-label="#">
+          <h4 class="note">${this.lang}</h4>
+          <a href="${this.github}" class="icon" target="_blank" role="link" aria-label="#">
             <img src="image/git_icon.png" height="22" width="22" />
           </a>
+          <a href="${this.link}" class="icon" target="_blank" role="link" aria-label="#">
+          <img src="image/link.png" height="22" width="22" />
+        </a>
         </div>
-      </div>
         `;
 
         this.attachShadow({ mode: 'open' });
