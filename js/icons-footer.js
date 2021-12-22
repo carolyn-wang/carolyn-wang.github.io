@@ -5,11 +5,7 @@ class IconsFooter extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-        <style>
-        a{
-          padding: 0.5rem;
-        }
-        </style>
+
         <footer role="contentinfo" class="ui-section-footer">
         <div class="ui-section-footer__layout ui-layout-flex">
           <!-- COPYRIGHT -->
@@ -18,11 +14,11 @@ class IconsFooter extends HTMLElement {
           <a href="https://github.com/carolyn-wang" target="_blank" role="link" aria-label="#">
             <img src="image/git_icon.png" height="22" width="22" />
           </a>
+          <a href="mailto:carolynw@berkeley.edu" target="_blank" role="link" aria-label="#">
+          <img src="image/gmail.png" height="22" width="22" />
+         </a>
           <a href="https://www.linkedin.com/in/carolyn-w/" role="link" target="_blank" aria-label="#">
             <img src="image/linkedin.png" height="22" width="22" />
-          </a>
-          <a href="mailto:carolynw@berkeley.edu" target="_blank" role="link" aria-label="#">
-            <img src="image/gmail.png" height="22" width="22" />
           </a>
         </div>
       </footer>
