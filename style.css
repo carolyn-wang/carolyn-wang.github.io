@@ -93,6 +93,7 @@ TABLE OF CONTENT
   --ui-typography-h4: 1rem;
   --ui-typography-p: 1rem;
   --ui-typography-s: .5rem;
+  --ui-typography-body: 14px;
 
   /* LEADING */
 
@@ -1025,7 +1026,6 @@ li {
     --ui-typography-h4: 1rem;
     --ui-typography-p: 1rem;
     --ui-typography-s: .8rem;
-    --ui-typography-body: 14px;
 
     /* MARGIN */
 
