@@ -64,6 +64,7 @@ TABLE OF CONTENT
   --ui-color-background-tertiary: var(--ui-color-n-100);
 
   /* BORDER COLOR */
+
   --ui-color-border: var(--ui-color-n-100);
 
   /* TYPOGRAPHY COLOR */
@@ -145,9 +146,9 @@ html {
   box-sizing: border-box;
   font-size: 100%;
 
-@media (min-width: 768px) {
-font-size: 112.5%;
-}
+  @media (min-width: 768px) {
+    font-size: 112.5%;
+  }
 }
 
 *,
@@ -265,10 +266,24 @@ svg {
   max-width: 100%;
 }
 
+/*------------------------------------------------------------
+  IMAGE & TITLE TEXT 
+  ------------------------------------------------------------*/
+
+.ui-image-pfp {
+  margin: var(--ui-layout-gutter);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: var(--ui-pfp-width);
+  width: var(--ui-pfp-width);
+  border-radius: 100%;
+}
+
 /*--------------------------------------------------------------
   4.1 SOCIAL MEDIA ICONS
   --------------------------------------------------------------*/
-.socialbtns{
+.socialbtns {
   color: var(--ui-color-n-700);
 }
 
@@ -663,7 +678,7 @@ main>nav {
   background-color: var(--ui-color-background-primary);
 }
 
-.sidenav a{
+.sidenav a {
   text-decoration: none;
 }
 
@@ -686,6 +701,7 @@ nav ul {
   margin: 0;
   padding: 0;
 }
+
 /* Only stick if you can fit */
 @media (min-height: 300px) {
   nav ul {
@@ -693,16 +709,18 @@ nav ul {
     top: 0;
   }
 }
+
 nav ul li a {
   display: block;
   text-decoration: none;
 }
+
 nav ul li a.current {
   color: var(--ui-color-pop);
   font-weight: bold;
 }
 
-ul{
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -792,15 +810,16 @@ li {
   overflow: hidden;
 }
 
-.link{
+.link {
   text-decoration: underline 2px var(--ui-color-n-300);
   font-size: var(--ui-typography-p);
   display: inline
 }
 
 .link:hover {
-  color:var(--ui-color-pop);
+  color: var(--ui-color-pop);
 }
+
 /*--------------------------------------------------------------
 |
 | 7.4 PROJECTS
@@ -817,7 +836,7 @@ li {
   text-align: center;
 }
 
-.ui-component-card--projects-image{
+.ui-component-card--projects-image {
   max-height: 15rem;
   height: 15rem;
   overflow: hidden;
@@ -1014,7 +1033,7 @@ li {
   :root {
     /*----------------------------------------------------------
     |
-    | TYPOGRAPHY
+    | TYPOGRAPHY (480px)
     |
     ----------------------------------------------------------*/
 
@@ -1032,7 +1051,7 @@ li {
 
     /*----------------------------------------------------------
     |
-    | LAYOUT
+    | LAYOUT (480px)
     |
     ----------------------------------------------------------*/
 
@@ -1048,7 +1067,7 @@ li {
   }
 
   /*------------------------------------------------------------
-  IMAGE & TITLE TEXT 
+  IMAGE & TITLE TEXT (480px)
   ------------------------------------------------------------*/
 
   .ui-image-pfp {
@@ -1067,7 +1086,7 @@ li {
   }
 
   /*------------------------------------------------------------
-  LAYOUT
+  LAYOUT (480px)
   ------------------------------------------------------------*/
 
   main {
