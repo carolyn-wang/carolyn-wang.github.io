@@ -180,6 +180,9 @@ main {
 /*--------------------------------------------------------------
 3.0 TYPOGRAPHY
 --------------------------------------------------------------*/
+.typewriter{
+  font-size: var(--ui-typography-h1);
+}
 
 .short-description {
   padding-top: 1rem;
