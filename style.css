@@ -762,7 +762,7 @@ ul {
 }
 
 .ui-sidenav--name {
-  padding-top: 30px;
+  padding-top: var(--ui-gap-header);
   padding-left: 5px;
   cursor: pointer;
   display: block;
