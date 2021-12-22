@@ -777,6 +777,32 @@ li {
 
 /*--------------------------------------------------------------
 |
+| 7.355 COLLAPSIBLE
+|
+--------------------------------------------------------------*/
+/* reference: https://www.w3schools.com/howto/howto_js_collapsible.asp */
+
+.collapsible {
+  cursor: pointer;
+}
+
+.content {
+  padding: var(--ui-gap-card);
+  display: none;
+  overflow: hidden;
+}
+
+.link{
+  text-decoration: underline 2px var(--ui-color-n-300);
+  font-size: var(--ui-typography-p);
+  display: inline
+}
+
+.link:hover {
+  color:var(--ui-color-pop);
+}
+/*--------------------------------------------------------------
+|
 | 7.4 PROJECTS
 |
 --------------------------------------------------------------*/
