@@ -38,16 +38,25 @@ class ProjectCard extends HTMLElement {
             max-width: 100%;
           }
           
-          .content {
+          .content-container {
             padding: 1rem 1.5rem;
-            max-height: 18rem;
-            height: 18rem;
+            max-height: 15rem;
+            height: 15rem;
             text-align: center;
           }
           
           .title {
             font-size: var(--ui-typography-h3);
             margin-bottom: .5rem;
+          }
+
+          .subtext{
+              position: absolute;
+              bottom: 5%;
+              margin-left: auto;
+              margin-right: auto;
+              left: 0;
+              right: 0;
           }
 
           .icon{
@@ -62,16 +71,18 @@ class ProjectCard extends HTMLElement {
           <img src="${this.img}" alt="#" loading="lazy">
         </a>
         </div>
-        <div class="content">
+        <div class="content-container">
           <h3 class="title">${this.name}</h3>
           <p>${this.description}</p>
-          <h4 class="note">${this.lang}</h4>
-          <a href="${this.github}" class="icon" target="_blank" role="link" aria-label="#">
-            <img src="image/git_icon.png" height="22" width="22" />
-          </a>
-          <a href="${this.link}" class="icon" target="_blank" role="link" aria-label="#">
-          <img src="image/link.png" height="22" width="22" />
-        </a>
+          <div class="subtext">
+            <h4 class="note">${this.lang}</h4>
+            <a href="${this.github}" class="icon" target="_blank" role="link" aria-label="#">
+                <img src="image/git_icon.png" height="22" width="22" />
+            </a>
+            <a href="${this.link}" class="icon" target="_blank" role="link" aria-label="#">
+            <img src="image/link.png" height="22" width="22" />
+            </a>
+          </div>
         </div>
         `;
 
