@@ -40,15 +40,6 @@
   |
   ------------------------------------------------------------*/
 
-  /* SIDENAV */
-  .sidenav {
-    visibility: hidden;
-  }
-
-  /* ICON */
-  .ui-section-header--menu-icon {
-    display: none;
-  }
 
   /*------------------------------------------------------------
   |
@@ -115,31 +106,7 @@
     padding-left: 2rem;
   }
 
-  /*------------------------------------------------------------
-  |
-  | CLOSE
-  |
-  ------------------------------------------------------------*/
 
-  .ui-section-close__layout {
-    align-items: center;
-    column-gap: var(--ui-layout-gutter);
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-  /*------------------------------------------------------------
-  |
-  | FOOTER
-  |
-  ------------------------------------------------------------*/
-
-  .ui-section-footer {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-  }
-}
 
 /*--------------------------------------------------------------
 |

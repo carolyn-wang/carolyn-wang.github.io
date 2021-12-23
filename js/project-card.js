@@ -28,14 +28,18 @@ class ProjectCard extends HTMLElement {
             line-height: 1.5;
           }
 
+        p{
+            margin: 0rem;
+        }
+
           .image-container{
             max-height: 15rem;
             overflow: hidden;
           }
 
           img {
-            object-fit: scale-down;
             max-width: 100%;
+            min-height: 100%;
           }
           
           .content-container {
@@ -51,12 +55,7 @@ class ProjectCard extends HTMLElement {
           }
 
           .subtext{
-              position: absolute;
-              bottom: 5%;
-              margin-left: auto;
-              margin-right: auto;
-              left: 0;
-              right: 0;
+              position: relative;
           }
 
           .icon{

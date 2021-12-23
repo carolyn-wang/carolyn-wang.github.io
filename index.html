@@ -36,7 +36,7 @@
 
 <body>
   <nav class="sidenav">
-    <div class="ui-sidenav--name"><a href="#home">Carolyn Wang</a></div>
+    <div class="ui-sidenav--name"><a href="#home">Carolyn Wang<pop>.</pop></a></div>
     <ul>
       <li class="about"><a href="#about">About</a></li>
       <li class="projects"><a href="#projects">Projects</a></li>
@@ -64,7 +64,6 @@
             <li><a href="https://github.com/carolyn-wang" target="_blank" class="fa fa-lg fa-github"></a></li>
             <li><a href="mailto:carolynw@berkeley.edu" target="_blank" class="fa fa-lg fa-envelope-square"></a></li>
             <li><a href="https://www.linkedin.com/in/carolyn-w/" target="_blank" class="fa fa-lg fa-linkedin"></a></li>
-            <!-- <li><a href="https://www.linkedin.com/in/carolyn-w/" target="_blank" class="fa fa-lg fa-link"></a></li> -->
           </ul>
         </div>
         <div>
@@ -75,7 +74,7 @@
       <div class="ui-component-cta ui-layout-flex">
         <a href="https://drive.google.com/file/d/1lNg2QTHi_SsAqqyhP2KLqIf_fpLwquuD/view?usp=sharing" target="_blank"
           class="ui-component-button ui-component-button-light 
-        ui-component-button-primary"> Resume/CV</a>
+        ui-component-button-pop"> Resume/CV</a>
       </div>
 
       <!-- MOUSE SCROLL ANIMATION -->
@@ -124,25 +123,29 @@
       </h2>
     </section>
 
+
     <!-- PROJECTS -->
     <section id="projects" class="ui-section">
       <div class="ui-layout-container">
         <h2>Projects</h2>
         <div class="short-description">
-
+          <h3>Berkeley Food Pantry ML Model</h3>
+          <h3>Human Rights Center Data Analysis</h3>
+          <h3>Boston.gov design elements</h3>
         </div>
       </div>
     </section>
 
     <!-- SIDE PROJECTS -->
-    <section id="side-projects" class="ui-section">
+    <section id="projects" class="ui-section">
       <div class="ui-layout-container">
-        <h2>Side Projects</h2>
+        <h2>Side Projects <small>(just for fun)</small></h2>
         <div class="short-description">
-          <p> I like coding websites and little games for fun in my free time. Everything
-            you see here below is self-taught, but also I think the challenge
-            of learning as I build is what makes coding so fun. Hope you enjoy
-          </p>
+          <p> In my free time, I like coding websites and smaller projects that I can play around with.
+             Front-end development is especially fun for me because I like the process of tinkering
+            with my code and watching
+            my artistic vision slowly come together on the screen before me. <br>I'm also a self-taught
+            web-developer, so I get to learn a lot of new things each time I start a project.</p> 
           <div class="ui-text-note"> Click on the upper-half image to go to the website, or
             click on the bottom-half of the card for more information.
           </div>
@@ -151,24 +154,47 @@
 
           <div class="ui-component-card ui-component-card--projects draw-border">
           <project-card  link="https://carolyn-wang.github.io/turtle-pet/" img="image/turtle-pet.gif"
-            description="A (very cute) turtle that follows your cursor. All animations coded in JS & CSS"
-            lang="Javascript, CSS, HTML" github="https://github.com/carolyn-wang/turtle-pet"> Small Pet Turtle</project-card>
+            description="A turtle that follows your cursor. <br> All animations are coded in JS & CSS."
+            lang="Javascript, CSS, HTML" github="https://github.com/carolyn-wang/turtle-pet"> Tiny Pet Turtle</project-card>
             </div>
 
           <div class="ui-component-card ui-component-card--projects draw-border">
           <project-card link="https://carolyn-wang.github.io/scope-berkeley/" img="image/scope.gif"
-            description="Event website with parallax scrolling effect"
+            description="Event website with parallax scrolling effect. <br> Built with Bootstrap"
             lang="HTML, CSS, Javascript" github="https://github.com/carolyn-wang/scope-berkeley"> SCOPE @ Berkeley
           </project-card>
           </div>
 
           <div class="ui-component-card ui-component-card--projects draw-border">
           <project-card link="https://carolyn-wang.github.io/oranges/" img="image/oranges.gif"
-            description="Full stack multi-player game" lang="HTML, CSS, Javascript"
+            description="Full stack multi-player game" 
+            lang="HTML, CSS, Javascript"
             github="https://github.com/carolyn-wang/oranges"> Benevolent Oranges</project-card>
             </div>
         </div>
         <!-- 4x3 gif -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="ui-section-close">
+      <div class="ui-layout-container">
+        <div class="ui-section-close__layout ui-layout-flex">
+          <div>
+            <h2>Let's not be strangers!</h2>
+            <p class="ui-text-intro">Send me an email or connect with me over Linkedin. <br>
+              I love meeting new people, so please reach out :)</p>
+          </div>
+          <!-- CTA -->
+          <div class="ui-component-cta ui-layout-flex">
+            <a href="mailto:carolynw@berkeley.edu" target="_blank" role="link" aria-label="#"
+            class="ui-component-button ui-component-button-normal ui-component-button-pop">Email <br><small>carolynw@berkeley.edu</small></a>
+            <a href="https://www.linkedin.com/in/carolyn-w/" target="_blank" role="link" aria-label="#"
+              class="ui-component-button ui-component-button-normal ui-component-button-pop">Linkedin <br><small>@carolyn-w</small></a>
+              <a href="https://github.com/carolyn-wang" target="_blank" role="link" aria-label="#"
+              class="ui-component-button ui-component-button-normal ui-component-button-pop">Github <br><small>@carolyn-wang</small></a>
+          </div>
+        </div>
       </div>
     </section>
 
