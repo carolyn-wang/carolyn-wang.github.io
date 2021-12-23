@@ -48,6 +48,7 @@ TABLE OF CONTENT
   /* COLOR PALETTE */
 
   --ui-color-pop: rgb(64, 185, 233);
+  --ui-color-pop-dark: rgb(44, 127, 160);
   --ui-color-n-000: #fff;
   --ui-color-n-050: #f5f5f5;
   --ui-color-n-100: #ebebeb;
@@ -698,7 +699,10 @@ input[name="toggle"] {
 7.0 SECTION
 --------------------------------------------------------------*/
 .ui-section {
-  padding: var(--ui-layout-gutter);
+  padding-left: var(--ui-layout-gutter);
+  padding-right: var(--ui-layout-gutter);
+  padding-top: var(--ui-layout-margin);
+  padding-bottom: var(--ui-layout-margin);
 }
 
 /*--------------------------------------------------------------
@@ -879,6 +883,25 @@ ul {
  .ui-section-projects__layout {
   row-gap: var(--ui-gap-card);
 }
+
+.project-description {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  font-size: var(--ui-typography-p);
+}
+
+.h3-link{
+  color: var(--ui-color-pop);
+}
+
+.h3-link:hover {
+  color: var(--ui-color-pop-dark);
+}
+
+.project-lang{
+  color: var(--ui-color-pop);
+}
+
 
 /*--------------------------------------------------------------
 |
