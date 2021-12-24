@@ -18,6 +18,7 @@ class ProjectCard extends HTMLElement {
             color: var(--ui-color-typography-heading);
             font-size: var(--ui-typography-h3);
             line-height: var(--ui-typography-h4-leading);
+            font-weight: var(--ui-bold);
           }
         
         h4{

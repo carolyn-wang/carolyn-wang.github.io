@@ -107,6 +107,9 @@ TABLE OF CONTENT
   /* MARGIN */
   --ui-typography-margin-body: 1.125rem;
 
+  /* WEIGHT */
+  --ui-bold: 500;
+
   /*------------------------------------------------------------
   |
   | 1.3 LAYOUT
@@ -213,9 +216,10 @@ ul {
 h1,
 h2,
 h3,
-h4 {
+h4
+{
   color: var(--ui-color-typography-heading);
-  font-weight: 500;
+  font-weight: var(--ui-bold);
 }
 
 
@@ -799,7 +803,7 @@ ul {
   position: relative;
   font-size: var(--ui-typography-h2);
   z-index: 1;
-  font-weight: bold;
+  font-weight: var(--ui-bold);
 }
 
 /*--------------------------------------------------------------
