@@ -109,6 +109,7 @@ TABLE OF CONTENT
 
   /* WEIGHT */
   --ui-bold: 500;
+  --ui-normal: 400;
 
   /*------------------------------------------------------------
   |
@@ -266,6 +267,7 @@ strong {
 
 small {
   font-size: var(--ui-typography-s);
+  font-weight: var(--ui-normal);
 }
 
 pop {

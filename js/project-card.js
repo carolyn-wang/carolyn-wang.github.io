@@ -27,6 +27,7 @@ class ProjectCard extends HTMLElement {
             line-height: var(--ui-typography-h4-leading);
             bottom: 20%;
             line-height: 1.5;
+            font-weight: var(--ui-normal);
           }
 
         p{
