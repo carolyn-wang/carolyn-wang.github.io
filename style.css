@@ -784,7 +784,7 @@ nav ul li a {
 
 nav ul li a.current {
   color: var(--ui-color-pop);
-  font-weight: bold;
+  font-weight: var(--ui-bold);
 }
 
 ul {
