@@ -41,20 +41,21 @@
       <li class="about"><a href="#about">About</a></li>
       <li class="experience"><a href="#experience">Experience</a></li>
       <li class="projects"><a href="#projects">Projects</a></li>
+      <li class="civictech"><a href="#civictech">Civictech</a></li>
       <li class="contact"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   <main role="main">
     <section id="home" class="ui-section-hero__layout">
       <!-- IMAGE -->
-      <img src="image/carolyn_wang.jpg" loading="lazy" alt="#" class="ui-image-pfp">
+      <img src="image/carolynwang.jpg" loading="lazy" alt="#" class="ui-image-pfp">
 
       <!-- INTRODUCTION -->
       <h1>Carolyn Wang</h1>
 
       <p class="typewriter">I'm a
         <span class="txt-rotate" data-period="2000"
-          data-rotate='[ "coder.", "civic technologist.", "aspiring turtle expert.", "data scientist.", "painter.", "web developer." ]'></span>
+          data-rotate='[ "coder.", "civic technologist.", "back-end engineer", "ML enthusiast", "data scientist.", "painter.", "web developer." ]'></span>
       </p>
 
       <!-- SOCIAL MEDIA ICONS -->
@@ -73,8 +74,8 @@
 
       <!-- CTA -->
       <div class="ui-component-cta ui-layout-flex">
-        <a href="https://docs.google.com/document/d/1NUfucuv0DcDSKvy1ZLaNm5j14Ba8TI1DyJAcJ5qXRtk/edit?usp=sharing" target="_blank"
-          class="ui-component-button ui-component-button-light 
+        <a href="https://docs.google.com/document/d/1NUfucuv0DcDSKvy1ZLaNm5j14Ba8TI1DyJAcJ5qXRtk/edit?usp=sharing"
+          target="_blank" class="ui-component-button ui-component-button-light 
         ui-component-button-pop"> Resume/CV</a>
       </div>
 
@@ -94,15 +95,14 @@
       <div class="ui-layout-container">
         <h2>About Me</h2>
         <div class="short-description">
-          <p>Hi! My name is Carolyn and I'm a second-year student at UC Berkeley.</p>
-          <p>I'm currently studying Computer Science and
+          <p>Hi! My name is Carolyn and I'm a fourth-year student at UC Berkeley. I'm currently studying Computer
+            Science and
             <a href="https://www.investopedia.com/terms/p/political-economy.asp#:~:text=Political%20economy%20is%20an%20interdisciplinary,work%20in%20the%20real%20world."
               target="_blank">
-              Political Economy</a>, which is just a fancy way of saying that I love coding,
-            <a href="https://www.reddit.com/r/dataisbeautiful/" target="_blank">data visualizations</a>, public policy,
+              Political Economy</a>, which is just a fancy way of saying that I love coding, ML,
+            <a href="https://www.reddit.com/r/dataisbeautiful/" target="_blank">data visualizations</a>,
             <a href="https://medium.com/@CivicWhitaker/what-is-civic-tech-b61a58c3eba8" target="_blank">
-              civic tech</a>, and more. Ultimately, my goal is to use my
-            data prediction and machine learning skills to inform better policy-making.
+              civic tech</a>, and more.
           </p>
           <p> If you're looking for something formal, here's my <a
               href="https://drive.google.com/file/d/1JvwMDdS1n1VPzpQt7dzcd7ym6SNLinfm/view?usp=sharing" target="_blank">
@@ -127,21 +127,137 @@
     <!-- EXPERIENCE -->
     <section id="experience" class="ui-section">
       <div class="ui-layout-container">
-        <h2>What I've done</h2>
+        <h2>Experience</h2>
+        <div class="project-description">
 
+          <h3><a href="https://about.meta.com/" target="_blank"><img src="resume_icons/meta.jpeg" loading="lazy" alt="#"
+                class="ui-image-resume-icon"></a> SWE Intern: ML & Backend, <a href="_" target="_blank" class="h3-link">
+              Meta (Recommendation Systems Team)</a></h3>
+          <div class="project-lang">Python, SQL</div>
+          <div class="project-description"> I worked on the In-Feed Recommendations team for Facebook Groups. My work
+            focused on data retrieval,
+            building pipelines, and developing ML generators to recommend group posts.
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="ui-section">
+      <div class="ui-layout-container">
+        <h2>Projects</h2>
+        <div class="short-description">
+          <div class="ui-text-note"> Click on the upper-half image to go to the website, or
+            click on the bottom-half of the card for more information.
+          </div>
+        </div>
+
+
+        <h3>Machine Learning</h3>
+        <div class="ui-section-projects__layout ui-layout-grid ui-layout-grid-2 ">
+
+
+          <div class="ui-component-card ui-component-card--projects draw-border">
+            <project-card
+              link="https://inst.eecs.berkeley.edu/~cs180/fa23/upload/files/proj1/carolynw"
+              img="image/_.gif"
+              description="" lang="Python"
+              github="https://github.com/carolyn-wang/turtle-pet"> CV: photo alignment<br><br><small></small></h3>
+            </project-card>
+          </div>
+
+          <div class="ui-component-card ui-component-card--projects draw-border">
+            <project-card
+              link=https://civictech-bfp.medium.com/berkeley-food-pantry-ml-footfall-prediction-model-1ed46218385a"
+              img="image/hrc.png"
+              description="Webscraping to collect dataset & time series model to identify historical trends"
+              lang="Python, Sklearn, Beautiful Soup" github="https://github.com/carolyn-wang/hrc-asylum"> Identifying
+              Bias in Asylum-Adjudication<br><br><small>EDA & classification models for analyzing US asylum cases.</small></h3>
+            </project-card>
+          </div>
+
+          <div class="ui-component-card ui-component-card--projects draw-border">
+            <project-card
+              link=https://civictech-bfp.medium.com/berkeley-food-pantry-ml-footfall-prediction-model-1ed46218385a"
+              img="image/_.gif"
+              description="<small>Model inputs included 10 years of historical footfall data, weather, seasonality, economic conditions </small>"
+              lang="Python, Google Cloud" github="_"> Berkeley Food Pantry
+              Daily Footfall<br><br><small>RNN Time series model to help a local food bank predict daily footfall.</small></h3>
+            </project-card>
+          </div>
+
+        </div>
+        <h3>Web Design</h3>
+        <div class="ui-section-projects__layout ui-layout-grid ui-layout-grid-2 ">
+
+          <div class="ui-component-card ui-component-card--projects draw-border">
+            <project-card link="https://carolyn-wang.github.io/turtle-pet/" img="image/turtle-pet.gif"
+              description="I coded all animations using JS & CSS." lang="Javascript, CSS, HTML"
+              github="https://github.com/carolyn-wang/turtle-pet"> Tiny Pet Turtle<br><br><small>A turtle that follows
+                your cursor.</small>
+            </project-card>
+          </div>
+
+          <div class="ui-component-card ui-component-card--projects draw-border">
+            <project-card
+              link="https://docs.google.com/presentation/d/1oHCqafzEBj7eCpaYVhts20-1Kfp_EGdoU6vDPbif0e0/edit?usp=sharing"
+              img="image/boston.gif" description="" lang="Javascript, SASS, SCSS, HTML, Docker"
+              github="https://github.com/CityOfBoston/patterns">
+              Boston.gov Website Elements<br><br><small>Full-stack web development internship project</small>
+            </project-card>
+          </div>
+
+          <div class="ui-component-card ui-component-card--projects draw-border">
+            <project-card link="https://carolyn-wang.github.io/twitter-academic-research-tool/" img="image/_.gif"
+              description="<small>NOTE: Functionality is deprecated due to Elon ending free access to Twitter's Academic API :(<small>"
+              lang="Javascript, CSS, HTML" github="https://github.com/carolyn-wang/twitter-academic-research-tool">
+              Twitter Academic Research Tool<br><br><small>Research tool to help human rights investigators find and
+                document war crimes
+                evidence on Twitter</small>
+            </project-card>
+          </div>
+
+          <div class="ui-component-card ui-component-card--projects draw-border">
+            <project-card link="https://carolyn-wang.github.io/index.html#projects" img="image/personal_website.gif"
+              description="This is the website you're currently on. :0" lang="Javascript, CSS, HTML"
+              github="https://github.com/carolyn-wang/carolyn-wang.github.io"> Personal Website
+            </project-card>
+          </div>
+          <!-- 4x3 gif, 800px x 600px-->
+        </div>
+    </section>
+
+
+
+    <!-- CIVIC TECH -->
+    <section id="civictech" class="ui-section">
+      <div class="ui-layout-container">
+        <h2>Volunteering & Tech for Social Good</h2>
+        <div class="short-description">
+          <div class="ui-text-note">On the side I'm involved in civictech and tech for social good. Here's some of the
+            work I've done in that space</div>
+        </div>
         <div class="project-description">
           <h3>Technical Researcher, <a href="https://humanrights.berkeley.edu/programs-projects/tech/investigations-lab"
               target="_blank" class="h3-link">
               Berkeley Law School: Human Rights Investigations Lab</a></h3>
           <div class="project-lang">Python (Beautiful Soup, Pandas, Matplotlib, Seaborn)</div>
           <div class="project-description"> I write open-source code to track human rights violations
-            as a part of  <a href="https://humanrights.berkeley.edu/programs-projects/tech/investigations-lab"
-            target="_blank">Berkeley's Human Rights Investigations Lab</a>. Recently, I coded data analysis on asylum seekers
-            and my findings were used by 
+            as a part of <a href="https://humanrights.berkeley.edu/programs-projects/tech/investigations-lab"
+              target="_blank">Berkeley's Human Rights Investigations Lab</a>. I coded data analysis on asylum
+            seekers
+            and my findings were used by
             <a href="https://www.humanrightsfirst.org/" target="_blank">Human Rights First</a>
-            to create a <a href="https://www.humanrightsfirst.org/sites/default/files/BidenAdminPosiedtoEliminateSafeguardonErroneousCredibleFearReviews.pdf"
-            target="_blank"> report for officials at the Department of Homeland Security.</a>
-            Currently our team is authoring a paper on asylum adjudication.
+            to create a <a
+              href="https://www.humanrightsfirst.org/sites/default/files/BidenAdminPosiedtoEliminateSafeguardonErroneousCredibleFearReviews.pdf"
+              target="_blank"> report for officials at the Department of Homeland Security.</a>
+            <br>Additionally, our team authored a <a href="https://eaamo2022.eaamo.org/papers/raman-4.pdf"
+              target="_blank">paper</a> which used ML to identify bias in asylum adjudication cases. This paper
+            <a href='https://eaamo2022.eaamo.org/awards/' target="_blank">
+              won Best Paper</a> at the selective algorithmic-bias conference EAAMO 2022.
           </div>
         </div>
 
@@ -154,110 +270,54 @@
               Digital Team</a> as a software intern through the <a href="https://www.codingitforward.com/corps"
               target="_blank">Coding it
               Forward Civic Innovation Corps</a>. As a full-stack developer,
-            I coded over 10 new web components for the <a href="https://patterns.boston.gov/" target="_blank">new
+            I coded over <b><a href="https://docs.google.com/presentation/d/1oHCqafzEBj7eCpaYVhts20-1Kfp_EGdoU6vDPbif0e0/edit?usp=sharing"
+              target="_blank">10 new web components</a></b> for the <a href="https://patterns.boston.gov/" target="_blank">new
               Boston.gov Design System</a>,
             conducted usability and accessibility testing on the <a href="https://www.drupal.org/"
               target="_blank">Drupal 8</a> content-management system,
-            and replaced outdated legacy applications to provide greater internal efficiency.</div>
+            and replaced outdated legacy applications to provide greater internal efficiency.
+
         </div>
 
         <div class="project-description">
-          <h3>Chief of Staff, <a href="https://asuc.org/mchen/"
-              target="_blank" class="h3-link">
+          <h3>Chief of Staff, <a href="https://asuc.org/mchen/" target="_blank" class="h3-link">
               ASUC Office for Tech, Social Good, and Data Science </a></h3>
-          <div class="project-description"> I led over 30 associates in a student government branch 
-              dedicated to increasing tech opportunities for underrepresented minority students. I
-              oversaw <a href="https://www.instagram.com/p/CJHrzNDhIRl/"
-              target="_blank">projects</a> including speaker panels for women in tech, internship fairs,
-              and professor coffee chats for URM students. I also
-              launched <a href="https://berkeley.us2.list-manage.com/subscribe?u=d63dcfc8ec223dc4fed50bd7b&id=920541245a"
+          <div class="project-description"> I led over 30 associates in a Berkeley student government branch
+            dedicated to increasing tech opportunities for underrepresented minority students. I
+            oversaw <a href="https://www.instagram.com/p/CJHrzNDhIRl/" target="_blank">projects</a> including speaker
+            panels for women in tech, internship fairs,
+            and professor coffee chats for URM students. I also
+            launched <a href="https://berkeley.us2.list-manage.com/subscribe?u=d63dcfc8ec223dc4fed50bd7b&id=920541245a"
               target="_blank">Berkeley's tech-for-social-good newsletter</a> which has over 300 subscribers.
           </div>
         </div>
 
         <div class="project-description">
-          <h3>Data Analyst, <a href="https://danhelmer.com/"
-              target="_blank" class="h3-link">
+          <h3>Data Analyst, <a href="https://danhelmer.com/" target="_blank" class="h3-link">
               Virginia State Representative Dan Helmer </a></h3>
-              <div class="project-lang">Python, Google App Script, Excel</div>
+          <div class="project-lang">Python, Google App Script, Excel</div>
           <div class="project-description"> I volunteered as a data analyst on
-            state representative <a href="https://danhelmer.com/"
-            target="_blank">Dan Helmer’s</a> 2021 campaign through a 
+            state representative <a href="https://danhelmer.com/" target="_blank">Dan Helmer’s</a> 2021 campaign through
+            a
             <a href="https://www.bluebonnetdata.org/fellowsBluebonnet" target="_blank">Bluebonnet fellowship</a>.
-            I analyzed vast amounts of <a href="https://en.wikipedia.org/wiki/NGP_VAN" target="_blank">historical national voter data</a>
+            I analyzed vast amounts of <a href="https://en.wikipedia.org/wiki/NGP_VAN" target="_blank">historical
+              national voter data</a>
             to created data visualizations that could be easily interpretted by the campaign team.
             Helmer's district is predominantly Asian and his opposing candidate was
-            Asian-American, so I focused on understanding the  
-            <a href="https://www.washingtonpost.com/opinions/2019/07/10/politicians-often-overlook-asian-american-voters-they-shouldnt-especially/" target="_blank">(often overlooked)</a>
+            Asian-American, so I focused on understanding the
+            <a href="https://www.washingtonpost.com/opinions/2019/07/10/politicians-often-overlook-asian-american-voters-they-shouldnt-especially/"
+              target="_blank">(often overlooked)</a>
             AAPI voting bloc to optimize campaign ad placement across
             Asian-American social media platforms. Ultimately, this helped
-            <a href="https://ballotpedia.org/Dan_Helmer" target="_blank">increase voter engagement by over 24%</a>
-             compared to the previous years.
-             <div class="ui-text-note"><small>Unfortunately the data I worked with is confidential under NDA, so I can't share my code. </small></div>
+            <a href="https://ballotpedia.org/Dan_Helmer" target="_blank">increase voter engagement by over 16%</a>
+            compared to the previous years.
+            <div class="ui-text-note"><small>Unfortunately the data I worked with is confidential under NDA, so I can't
+                share my code. </small></div>
           </div>
         </div>
 
 
       </div>
-      </div>
-    </section>
-
-
-    <!-- PROJECTS -->
-    <section id="projects" class="ui-section">
-      <div class="ui-layout-container">
-        <h2>Technical Projects</h2>
-        <div class="short-description">
-          <h3>Berkeley Food Pantry ML Model, <a href= 'https://civictech-bfp.medium.com/berkeley-food-pantry-ml-footfall-prediction-model-1ed46218385a' target="_blank" class="h3-link">Blog Post</a></h3>
-          <h3>Human Rights Center Data Analysis</h3>
-          <h3>Boston.gov design elements</h3>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- SIDE PROJECTS -->
-    <section id="projects" class="ui-section">
-      <div class="ui-layout-container">
-        <h2>Side Projects <small>(just for fun)</small></h2>
-        <div class="short-description">
-          <p> In my free time, I code websites and smaller projects that I can play around with.
-            </p>
-          <div class="ui-text-note"> <small>Click on the upper-half image to go to the website, or
-            click on the bottom-half of the card for more information.</small>
-          </div>
-        </div>
-        <div class="ui-section-projects__layout ui-layout-grid ui-layout-grid-3 ">
-
-          <div class="ui-component-card ui-component-card--projects draw-border">
-            <project-card link="https://carolyn-wang.github.io/turtle-pet/" img="image/turtle-pet.gif"
-              description="A turtle that follows your cursor. <br> All animations are coded in JS & CSS."
-              lang="Javascript, CSS, HTML" github="https://github.com/carolyn-wang/turtle-pet"> Tiny Pet Turtle
-            </project-card>
-          </div>
-
-          <!-- 
-              DOB (Birthday): December 2021
-              What I learned:
-              Areas of improvement: There's a small bug in my code for how the turtle rotates
-              to follow your cursor. You might notice that if you get too close, the 
-            little guy flips around and lets you touch its butt. Until I figure out how 
-            to fix this, I guess we'll just call it a happy accident?  -->
-
-          <div class="ui-component-card ui-component-card--projects draw-border">
-            <project-card link="https://carolyn-wang.github.io/scope-berkeley/" img="image/scope.gif"
-              description="Event website with parallax scrolling effect. <br> Built with Bootstrap"
-              lang="HTML, CSS, Javascript" github="https://github.com/carolyn-wang/scope-berkeley"> SCOPE @ Berkeley
-            </project-card>
-          </div>
-
-          <div class="ui-component-card ui-component-card--projects draw-border">
-            <project-card link="https://carolyn-wang.github.io/oranges/" img="image/oranges.gif"
-              description="Full stack multi-player game" lang="HTML, CSS, Javascript"
-              github="https://github.com/carolyn-wang/oranges"> Benevolent Oranges</project-card>
-          </div>
-        </div>
-        <!-- 4x3 gif -->
       </div>
     </section>
 
@@ -267,8 +327,7 @@
         <div class="ui-section-close__layout ui-layout-flex">
           <div>
             <h2>Let's not be strangers!</h2>
-            <p class="ui-text-intro">Send me an email or connect with me over Linkedin. <br>
-              I like meeting new people, so please reach out :)</p>
+            <p class="ui-text-intro">Send me an email or reach out to me over Linkedin</p>
           </div>
           <!-- CTA -->
           <div class="ui-section-close__buttons ui-component-cta ui-layout-flex">
